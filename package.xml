@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+  <name>Tymeline</name>
+  <description>Tymeline for FreeCAD: a localhost listener the Tymeline agent uses to read and edit the open document. Derived from freecad-mcp (MIT).</description>
+  <version>0.1.25</version>
+  <date>2026-10-05</date>
+  <icon>Resources/icons/tymeline.png</icon>
+  <maintainer email="sayeedulhoda@gmail.com">sayeed-hoda</maintainer>
+  <license>MIT</license>
+  <url type="repository" branch="main">https://github.com/sayeed-hoda/Tymeline-FreeCAD-Addon</url>
+  <url type="bugtracker">https://github.com/sayeed-hoda/Tymeline-FreeCAD-Addon/issues</url>
+  <url type="readme">https://github.com/sayeed-hoda/Tymeline-FreeCAD-Addon/blob/main/README.md</url>
+  <content>
+    <workbench>
+      <classname>TymelineWorkbench</classname>
+      <name>Tymeline</name>
+      <!-- InitGui.py lives at the package root. Without an explicit
+           subdirectory FreeCAD's package loader looks elsewhere and
+           silently loads NOTHING — no workbench, no auto-start, while
+           the rpc_server modules stay importable. -->
+      <subdirectory>./</subdirectory>
+    </workbench>
+  </content>
+</package>
